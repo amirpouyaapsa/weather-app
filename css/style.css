@@ -27,19 +27,32 @@ body {
     font-family: "MyVazirmatn", sans-serif;
     margin: 0;
     padding: 20px 20px;
+    background-color: rgba(222, 222, 222, 0.1);
+    display: flex;
 }
 
 main {
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
 }
 
 #title {
-    margin-bottom: 10px;
-    font-size: 24px;
+    /* margin-top: 10px; */
+    font-size: 32px;
     color: black;
 }
 
 #message {
-    font-size: 16px;
-    color: gray;
+    font-size: 24px;
+    color: rgb(134, 134, 134);
+}
+
+.designer {
+    margin-top: auto;
+    font-size: 8px;
+    color: rgb(181, 181, 181);
 }
