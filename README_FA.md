@@ -92,7 +92,7 @@ button.addEventListener("click", function () {
 **بدون `defer`** (اسکریپت داخل `head`): کد قبل از ساخته شدن دکمه اجرا می‌شود، مقدار `button` برابر `null` است و `addEventListener` خطا می‌دهد.
 
 <div dir="rtl" style="text-align: right; list-style-position: inside; padding-right: 0;">
-    <strong>۴. `defer` یا اسکریپت در انتهای `body`؟</strong>
+## ۴. `defer` یا اسکریپت در انتهای `body`؟
 </div>
 روش دوم این است که اسکریپت درست قبل از `</body>` قرار بگیرد:
 
@@ -119,10 +119,10 @@ button.addEventListener("click", function () {
 
 ## ۵. نکات مهم
 <ul dir="rtl" style="text-align: right; list-style-position: inside; padding-right: 0;">
-    <li> `defer` فقط روی اسکریپت‌های **خارجی** (با `src`) اثر دارد و روی اسکریپت‌های درون‌خطی بی‌اثر است.</li>
-    <li> اگر اسکریپت به عناصر صفحه نیاز دارد، `defer` در `head` انتخاب مناسبی است.</li>
-    <li> اسکریپت در انتهای `body` هم روش معتبری است، ولی دانلودش دیرتر شروع می‌شود.</li>
-    <li> اگر ترتیب اجرای چند فایل مهم است، `defer` ترتیب را حفظ می‌کند. `async` این تضمین را **نمی‌دهد**.</li>
+    <li> defer فقط روی اسکریپت‌های خارجی (با src) اثر دارد و روی اسکریپت‌های درون‌خطی بی‌اثر است.</li>
+    <li> اگر اسکریپت به عناصر صفحه نیاز دارد، defer در head انتخاب مناسبی است.</li>
+    <li> اسکریپت در انتهای body هم روش معتبری است، ولی دانلودش دیرتر شروع می‌شود.</li>
+    <li> اگر ترتیب اجرای چند فایل مهم است، defer ترتیب را حفظ می‌کند. async این تضمین را نمی‌دهد.</li>
 </ul>
 
 </div>
