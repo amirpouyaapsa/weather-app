@@ -92,7 +92,7 @@ button.addEventListener("click", function () {
 **بدون `defer`** (اسکریپت داخل `head`): کد قبل از ساخته شدن دکمه اجرا می‌شود، مقدار `button` برابر `null` است و `addEventListener` خطا می‌دهد.
 
 <div dir="rtl" style="text-align: right; list-style-position: inside; padding-right: 0;">
-    <strong>۴.</strong> `defer` یا اسکریپت در انتهای `body`؟
+    <strong>۴. `defer` یا اسکریپت در انتهای `body`؟</strong>
 </div>
 روش دوم این است که اسکریپت درست قبل از `</body>` قرار بگیرد:
 
