@@ -7,7 +7,7 @@
 برای مشاهدهٔ نسخهٔ آنلاین پروژه، روی لینک بالا کلیک کنید.
 
 
-<div dir="rtl">
+<div dir="rtl" align="right">
 
 # هفته صفر: ویژگی `defer` در جاوااسکریپت
 
@@ -15,8 +15,10 @@
 
 مرورگر فایل HTML را از بالا به پایین می‌خواند. صفحه از دو بخش ساخته می‌شود:
 
-- **HTML:** اسکلت صفحه (دکمه، عنوان، فرم)
-- **JavaScript:** رفتار صفحه (کلیک، نمایش پیام)
+<ul dir="rtl" style="text-align: right; list-style-position: inside; padding-right: 0;">
+<li><strong>HTML:</strong> اسکلت صفحه (دکمه، عنوان، فرم)</li>
+<li><strong>JavaScript:</strong> رفتار صفحه (کلیک، نمایش پیام)</li>
+</ul>
 
 اگر تگ `script` داخل `head` باشد:
 
@@ -120,19 +122,5 @@ button.addEventListener("click", function () {
 - اگر اسکریپت به عناصر صفحه نیاز دارد، `defer` در `head` انتخاب مناسبی است.
 - اسکریپت در انتهای `body` هم روش معتبری است، ولی دانلودش دیرتر شروع می‌شود.
 - اگر ترتیب اجرای چند فایل مهم است، `defer` ترتیب را حفظ می‌کند. `async` این تضمین را **نمی‌دهد**.
-
-## ۶. تمرین
-
-**۱.** اسکریپت در `head` است و `defer` ندارد. چرا کد زیر ممکن است خطا بدهد؟
-
-```javascript
-const button = document.getElementById("myButton");
-
-button.addEventListener("click", function () {
-    alert("سلام!");
-});
-```
-
-**۲.** چرا دانلود هم‌زمان با خواندن HTML می‌تواند `defer` را از اسکریپت در انتهای `body` سریع‌تر کند؟
 
 </div>
